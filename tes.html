@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tes doang Coy</title>
+    <style>
+        #loaderslah{
+            position: fixed;
+            width: 100%;
+            height: 700px;
+            z-index: 10;
+            overflow: visible;
+            background: #fff url("https://c.tenor.com/_jGqjsqWaocAAAAC/gawr-gura-loading-gawr.gif") no-repeat center center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="loaderslah"></div>
+    <div id="content">
+        <h1>Gif tes doang ajggg</h1>
+    </div>
+    <script type="text/javascript">
+        var loader;
+        function loadNow(opacity) {
+            if(opacity <= 0) {
+                displayContent();
+            } else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function() {
+                    loadNow(opacity - 0.04)
+                }, 100)
+            }            
+        }
+
+        function displayContent() {
+            loader.style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        })
+    </script>
+</body>
