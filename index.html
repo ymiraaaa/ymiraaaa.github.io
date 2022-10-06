@@ -1,18 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-  		<link rel="preloader" href="assets/css/preloader.css" />
 		<title>Bio is Fun!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="https://www.pngitem.com/pimgs/m/602-6020115_hamburg-amburgesa-sandwich-food-pixel-om-burger-pixel.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="assets/js/main.js"></script>
 	</head>
-	<body>
+	<body class="is-preload">
 		<!-- Wrapper -->
-		<div id="loaderslah"></div>
 			<div id="wrapper">
 
 				<!-- Header -->
@@ -209,28 +206,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script type="text/javascript">
-				var loaderslah;
-				function loadNow(opacity) {
-					if(opacity <= 0) {
-						displayContent();
-					} else {
-						loaderslah.style.opacity = opacity;
-						window.setTimeout(function() {
-							loadNow(opacity - 0.04)
-						}, 100)
-					}            
-				}
-		
-				function displayContent() {
-					loaderslah.style.display = 'none';
-					document.getElementById('content').style.display = 'block';
-				}
-		
-				document.addEventListener("DOMContentLoaded", function() {
-					loaderslah = document.getElementById('loaderslah');
-					loadNow(1);
-				})
-			</script>
 	</body>
 </html>

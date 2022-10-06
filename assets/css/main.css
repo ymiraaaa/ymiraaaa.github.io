@@ -1,14 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-#loaderslah{
-	position: fixed;
-	width: 100%;
-	height: 700px;
-	z-index: 10;
-	overflow: visible;
-	background: #fff url("https://c.tenor.com/_jGqjsqWaocAAAAC/gawr-gura-loading-gawr.gif") no-repeat center center;
-}
+/*
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -120,22 +117,6 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-		#loading {
-			position: fixed;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			opacity: 0.7;
-			background-color: #fff;
-			z-index: 99;
-		  }
-		  #loading-image {
-			z-index: 100;
-		  }
 /* Type */
 
 	body {
